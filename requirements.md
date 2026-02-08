@@ -100,3 +100,71 @@ StoryCode analyzes source code, version control history and code reviews to gene
 ---
 
 ## 4. Technical Requirements
+
+### 4.1 Backend
+
+- The syste
+
+---
+
+## 5. Data Requirements
+
+### 5.1 Input Data
+
+- Source code files from repository
+- Git commit metadata including author, timestamp and messages
+- Code diffs between commits
+- Code review comments 
+
+### 5.2 Privacy and Security
+
+- The system shall not use private repositories
+- The analysis must occur only with user's discretion 
+
+---
+
+## 6. AI and Model Requirements
+
+### 6.1 Narrative Coherance
+
+- Generated narratives shall be logically coherant and in chronological order
+- Narratives must be consistent
+
+### 6.2 Fabrication Avoidance
+
+- The AI shall not fabricate events, decisions not supported by data
+- The system shall prefer explanatopms when evidence is available
+
+### 6.3 Adaptivity
+
+- The AI shall adapt explanation based on user selected abstraction
+- The AI shall support iterative explanations
+
+---
+
+## 7. User Requirements
+
+### 7.1 Students
+
+- The system shall help students understand real-time legacy codebases
+
+### 7.2 Developers
+
+- The system shall reduce onboarding time for new developers and developers new to the assigned codebase
+
+### 7.3 Team 
+
+- The system shall reduce understanding time of codebases with inadequate design documents
+
+---
+
+## 8. Success Criteria
+
+- Users report improved understanding of legacy code based on timely feedback
+- Reduced time to comprehend selected modules
+
+---
+
+## 9. Conclusion
+
+StoryCode prioritises **human understanding** over purely technical completeness. This system focuses on learning, productivity and explainable AI
