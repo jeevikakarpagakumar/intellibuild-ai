@@ -105,17 +105,29 @@ StoryCode analyzes source code, version control history and code reviews to gene
 - The system shall be implemented using a Python based backend
 - The system shall use Git integration libraries to analyze repository history
 
-### 4.2 AI Components
+### 4.2 Code Review Integration
+- The system shall support extraction of review data via APIs or repository metadata
+- Initial implementations may focus on a single platform 
+- Review extraction shall respect access permissions and privacy constraints
+
+### 4.3 AI Components
 - A large language model shall be used for narrative generation
-- Machine learning techniques may be used for change classification and intent inference
+- Machine learning techniques may be used for:
+  - Change classification
+  - Intent inference
+  - Review theme clustering
 
-### 4.3 Frontend
+### 4.4 Frontend
 - The system shall provide a web based user interface
-- The interface shall display narrative explanations and evolution timelines
+- The interface shall display:
+  - Narrative explanations
+  - Evolution timelines
+  - Review-informed insights
 
-### 4.4 Storage
+### 4.5 Storage
 - The system shall use temporary storage for repository analysis
-- Repository data shall not be stored permanently without user consent
+- Repository and review data shall not be stored permanently without user consent
+
 
 ---
 
