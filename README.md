@@ -1,2 +1,2 @@
 # intellibuild-ai
-AI for Communities, Access &amp; Public Impact
+AI for Learning and Developer producivity
