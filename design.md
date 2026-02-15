@@ -65,19 +65,19 @@ Displayes story based explanation through interactive UI
 
  ### 4.6 Intent Inference Engine
 - Infers why changes were made using
-  - Commit messages
-  - Change patterns
-  - Code review discussions
+    - Commit messages
+    - Change patterns
+    - Code review discussions
 - Explicitly models uncertainty and avoids overconfident conclusions
 - Outputs structured intent signals for narrative generation
 
 ### 4.7 Narrative Generation Module
 - Uses a large language model to convert structured signals into stories
-- Ensures chronological and logical coherence.
+- Ensures chronological and logical coherence
 - Adapts explanation depth based on abstraction level:
-  - Beginner: motivations and high-level evolution
-  - Intermediate: design decisions and trade-offs
-  - Expert: technical rationale and risks
+    - Beginner: motivations and high level evolution
+    - Intermediate: design decisions and tradeoffs
+    - Expert: technical rationale and risks
 - Avoids hallucination by grounding narratives in extracted evidence
 
 ### 4.8 Risk Analysis Module
@@ -103,22 +103,22 @@ Uncertainty is explicitly communicated in outputs to maintain user trust
 
 ## 6. Data Flow Design
 
-1. Repository is ingested by the system.
-2. Code structure, commit history, and review data are extracted.
-3. Changes are classified and aggregated chronologically.
-4. Developer intent and risk signals are inferred.
-5. Narrative explanations are generated.
-6. Results are rendered in the user interface.
+1. Repository is ingested by the system
+2. Code structure, commit history, and review data are extracted
+3. Changes are classified and aggregated chronologically
+4. Developer intent and risk signals are inferred
+5. Narrative explanations are generated
+6. Results are rendered in the user interface
 
-This linear data flow simplifies debugging and scalability.
+This linear data flow simplifies debugging and scalability
 
-## 7. Abstraction-Level Control
+## 7. Abstraction Level Control
 
 StoryCode supports three abstraction levels:
 
 - Beginner: 
   Focuses on story, motivation, and high-level evolution
-- **Intermediate:**  
+- Intermediate: 
   Explains design decisions, trade-offs, and architectural shifts
 - Expert:
   Provides technical reasoning, performance implications, and risk areas
@@ -160,5 +160,3 @@ StoryCode’s design prioritizes **human understanding, explainable AI, and real
 By integrating code, history, and reviews into narrative explanations, the system bridges the gap between technical logic and human intent
 
 ---
-
-
