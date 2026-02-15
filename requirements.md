@@ -102,8 +102,20 @@ StoryCode analyzes source code, version control history and code reviews to gene
 ## 4. Technical Requirements
 
 ### 4.1 Backend
+- The system shall be implemented using a Python based backend
+- The system shall use Git integration libraries to analyze repository history
 
-- The syste
+### 4.2 AI Components
+- A large language model shall be used for narrative generation
+- Machine learning techniques may be used for change classification and intent inference
+
+### 4.3 Frontend
+- The system shall provide a web based user interface
+- The interface shall display narrative explanations and evolution timelines
+
+### 4.4 Storage
+- The system shall use temporary storage for repository analysis
+- Repository data shall not be stored permanently without user consent
 
 ---
 
