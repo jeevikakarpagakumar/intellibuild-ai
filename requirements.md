@@ -101,33 +101,61 @@ StoryCode analyzes source code, version control history and code reviews to gene
 
 ## 4. Technical Requirements
 
-### 4.1 Backend
-- The system shall be implemented using a Python based backend
-- The system shall use Git integration libraries to analyze repository history
+### 4.1 Frontend
 
-### 4.2 Code Review Integration
-- The system shall support extraction of review data via APIs or repository metadata
-- Initial implementations may focus on a single platform 
-- Review extraction shall respect access permissions and privacy constraints
+- The system shall use **React.js** to build a responsive and interactive web interface
+- The frontend shall support dynamic rendering of narrative explanations and timelines
+- The frontend shall communicate with the backend using RESTful APIs
+- The UI shall support real-time updates for analysis progress
 
-### 4.3 AI Components
-- A large language model shall be used for narrative generation
-- Machine learning techniques may be used for:
-  - Change classification
-  - Intent inference
-  - Review theme clustering
+### 4.2 Backend
 
-### 4.4 Frontend
-- The system shall provide a web based user interface
-- The interface shall display:
-  - Narrative explanations
-  - Evolution timelines
-  - Review-informed insights
+- The system shall use **Python** as the primary backend language
+- The backend shall be implemented using either:
+    - **FastAPI** (preferred for performance and async support), or
+    - **Django** (for structured and scalable API development)
+- The backend shall expose REST APIs for:
+    - Repository ingestion
+    - Commit history extraction
+    - Code review extraction
+    - Narrative generation
+- The backend shall handle request validation, error handling, and API authentication.
 
-### 4.5 Storage
-- The system shall use temporary storage for repository analysis
-- Repository and review data shall not be stored permanently without user consent
+### 4.3 AI / LLM Integration
 
+- The system shall integrate the **OpenAI API** for code to story narrative generation
+- The backend shall structure repository insights before sending them to the LLM
+- The system shall implement prompt control mechanisms to:
+    - Reduce hallucination
+    - Maintain narrative coherence
+    - Control abstraction level (Beginner / Intermediate / Expert)
+- The system shall handle API rate limiting and error fallback mechanisms
+
+### 4.4 Version Control Integration
+
+- The system shall integrate with the **GitHub API** to:
+  - Fetch commit history
+  - Retrieve pull requests
+  - Extract code diffs
+  - Extract review comments
+- The system shall support OAuth based GitHub authentication
+- The system shall respect repository access permissions and user scopes
+
+### 4.5 Authentication & Authorization 
+
+- The system shall implement **OAuth 2.0** for secure third-party authentication
+- The system shall use **JWT (JSON Web Tokens)** for secure session management
+- Access tokens shall be securely stored and transmitted over HTTPS
+- The system shall restrict repository access based on user permissions
+
+### 4.6 Cloud Hosting & Deployment
+
+- The system shall be deployed on **AWS** for scalability and reliability
+- The deployment environment may include:
+  - AWS EC2 or ECS for backend hosting
+  - AWS S3 for static frontend hosting
+  - AWS RDS (optional) for metadata storage
+- The system shall support horizontal scaling for increased user load
 
 ---
 
