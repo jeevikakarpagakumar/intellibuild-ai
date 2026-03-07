@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+requests
+boto3
+python-dotenv
+gitpython
+starlette
+pydantic
+etc
+mangum

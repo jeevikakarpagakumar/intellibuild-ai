@@ -1,0 +1,44 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.env
+.venv/
+
+# MacOS files
+.DS_Store
+
+# Logs
+*.log
+
+# Python build files
+build/
+dist/
+*.egg-info/
+
+# IDE files
+.vscode/
+.idea/
+
+# AWS / security keys
+*.pem
+*.key
+
+# Zip files
+*.zip
+
+# Temporary files
+tmp/
+temp/
+
+# Lambda build artifacts
+lambda_build/
+
+# Environment configs
+.env.local
+.env.production
+.env.development

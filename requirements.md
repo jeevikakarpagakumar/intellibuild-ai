@@ -155,7 +155,7 @@ StoryCode analyzes source code, version control history and code reviews to gene
   - AWS EC2 or ECS for backend hosting
   - AWS S3 for static frontend hosting
   - AWS RDS (optional) for metadata storage
-- The system shall support horizontal scaling for increased user load
+- The system shall support horizontal scaling for increased user loadss
 
 ---
 
